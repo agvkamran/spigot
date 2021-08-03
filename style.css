@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    background-color: yellow;
+}
+
+.nav_list > li:not(:first-child){
+    margin-left: 15px;
+}
+
+.bgc {
+    background-color: #242433;
+}
+
+.bg_icon {
+    background-image: url(./images/icons/spigot-icon-ds.svg);
+    color: #242433;
+    background-color: #242433;
+}
