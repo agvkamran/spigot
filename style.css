@@ -174,7 +174,31 @@ header {
     justify-content: space-between;
     flex: 2.75;
     margin: 0 50px;
+    line-height: 1.5;
     font-size: 1.5rem;
+}
+
+/*----------------------------------Images wrapper-----------------------------------------*/
+
+.images_wrapper {
+    width: 100%;
+    display: flex;
+    padding: 3px;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+
+.top_side_image, .bottom_side_image {
+    flex: 1;
+    overflow: hidden;
+    margin: 2px;
+    width: 33%;
+}
+
+.top_side_image > img, .bottom_side_image > img {
+    width: 100%;
+    height: 100%;
 }
 
 /*----------------------------------MEDIA QUERIES--------------------------------------*/
