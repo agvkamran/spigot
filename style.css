@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -12,7 +13,25 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+
+.header_logo span {
+    color: #fff;
+    color: #000;
+    font-size: 26px;
+}
+
+.header_icon_logo {
+    width: 40px;
+    height: 40px;
+    color: #fff;
 }
 
 .nav_list {
@@ -20,19 +39,151 @@ header {
     align-items: center;
     list-style-type: none;
     text-transform: uppercase;
-    background-color: yellow;
+    color: #595977;
 }
 
 .nav_list > li:not(:first-child){
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
-.bgc {
-    background-color: #242433;
+.nav_list > li:last-child{
+    margin-right: 15px;
 }
 
-.bg_icon {
-    background-image: url(./images/icons/spigot-icon-ds.svg);
-    color: #242433;
-    background-color: #242433;
+.burger_menu {
+    display: none;
+}
+
+.background_theme_color {
+    background-color: #242433
+}
+
+.background_theme_icon {
+    background: url(./images/spigot-icon-mini.svg);
+    background-size: 30px;
+}
+
+.foreground {
+    padding: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 8px solid #944A9D;
+}
+
+.foreground_text_wrapper {
+    /* width: 50rem; */
+}
+
+.foreground h1{
+    /* font-size: 47px; */
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/*----------------------------------SERVICES------------------------------------------*/
+
+/*---------------------------------Service first block----------------------------*/
+
+.services {
+    display: flex;
+    width: 100%;
+}
+
+.services_inner {
+    display: flex;
+    background-color: #eeeef3;
+    width: 100%;
+}
+
+.services_first_block {
+    background-color: #eeeef3;
+    padding: 80px 20px;
+    flex: 1.5;
+}
+
+.services_first_block h2 {
+    color: #3b3b4f;
+    font-size: 2rem;
+}
+
+.service_text {
+    margin-top: 15px;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.btn_lets_get {
+    background-color: #eeeef3;
+    padding: 13px 25px;
+    margin-top: 15px;
+    color: #453c82;
+    font-weight: 900;
+    border: 3px solid #453c82;
+    transition: all 0.4s ease;
+}
+
+.btn_lets_get:hover {
+    background-color: #453c82;
+    color: #fff;
+}
+
+/*---------------------------------Service second block----------------------------*/
+
+.services_second_block {
+    display: flex;
+    width: 65%;
+}
+
+.services_second_block > .service_box {
+    margin: 0 2px 2px 2px;
+}
+
+.service_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    flex: 1;
+}
+
+.service_box > h3 {
+    margin-top: 10px;
+}
+
+/*----------------------------------MEDIA QUERIES--------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+    .services_inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .services_second_block {
+        width: 100%;
+    }
+    .service_box {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .services_second_block {
+        display: flexs;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav_list {
+        display: none;
+    }
+    .burger_menu {
+        display: block;
+        font-size: 28px;
+    }
 }

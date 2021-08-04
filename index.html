@@ -1,32 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
 </head>
+
 <body>
     <main>
         <header>
-                <div>LOGO</div>
-                <nav>
-                    <ul class="nav_list">
-                        <li>Portfolio</li>
-                        <li>Services</li>
-                        <li>Blog</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li></li>
-                    </ul>
-                </nav>
-        </header>
-        <section class="bgc">
-            <div class="bg_icon">
-
+            <div class="header_logo">
+                <img src="./images/icons/spigot-icon-ds.svg" alt="icon_logo" class="header_icon_logo">
+                <span>spigot</span>
             </div>
-        </section>
+            <nav>
+                <ul class="nav_list">
+                    <li>Portfolio</li>
+                    <li>Services</li>
+                    <li>Blog</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li><i class="fas fa-search"></i></li>
+                </ul>
+                <div class="burger_menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+        <article class="background_theme_color">
+            <div class="background_theme_icon">
+                <div class="foreground">
+                    <img src="./images/icons/spigot-icon-ds.svg" alt="icon_logo">
+                    <div class="foreground_text_wrapper">
+                        <h1>Park City's Web Design & Digital Marketing Professionals </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <div class="services_inner">
+                    <div class="services_first_block">
+                        <h2>Spigot Powers Small Businesses and Organizations</h2>
+                        <p class="service_text first_service_text">We're a team of Utah web design and marketing
+                            professionals who know what it takes to create and
+                            maintain a site that ranks.</p>
+                        <p class="service_text">Propelled by in-depth SEO research and a targeted site strategy, our web
+                            designers and developers
+                            build clean and responsive custom WordPress websites that drive traffic and keep audiences
+                            engaged.</p>
+                        <p class="service_text">That all sounds a little dry, we know. But it's really a lot of fun...
+                            we
+                            promise.</p>
+                        <button class="btn_lets_get">LET'S GET THIS PARTY STARTED</button>
+                    </div>
+                    <div class="services_second_block">
+                        <div class="service_box">
+                            <img src="./images/icons/web-design.svg" alt="website_design_icon">
+                            <h3>Website Design</h3>
+                        </div>
+                        <div class="service_box">
+                            <img src="./images/icons/web-design.svg" alt="website_design_icon">
+                            <h3>Digital Marketing</h3>
+                        </div>
+                        <div class="service_box">
+                            <img src="./images/icons/web-design.svg" alt="website_design_icon">
+                            <h3>Wordpress Support</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
     </main>
 </body>
+
 </html>
