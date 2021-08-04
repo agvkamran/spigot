@@ -72,12 +72,7 @@ header {
     border-bottom: 8px solid #944A9D;
 }
 
-.foreground_text_wrapper {
-    /* width: 50rem; */
-}
-
 .foreground h1{
-    /* font-size: 47px; */
     font-size: 3rem;
     color: #fff;
     text-align: center;
@@ -86,7 +81,6 @@ header {
 
 
 /*----------------------------------SERVICES------------------------------------------*/
-
 /*---------------------------------Service first block----------------------------*/
 
 .services {
@@ -102,7 +96,7 @@ header {
 
 .services_first_block {
     background-color: #eeeef3;
-    padding: 80px 20px;
+    padding: 80px 80px;
     flex: 1.5;
 }
 
@@ -118,6 +112,7 @@ header {
 }
 
 .btn_lets_get {
+    cursor: pointer;
     background-color: #eeeef3;
     padding: 13px 25px;
     margin-top: 15px;
@@ -155,6 +150,7 @@ header {
 .service_box > h3 {
     margin-top: 10px;
 }
+
 /*----------------------------------Some text-----------------------------------------*/
 
 .some_text {
@@ -188,18 +184,47 @@ header {
     flex-wrap: wrap;
 }
 
-
-.top_side_image, .bottom_side_image {
-    flex: 1;
-    overflow: hidden;
-    margin: 2px;
+.front_image_first {
+    background: url(images/all-seasons-adventures.jpg);  
     width: 33%;
+    height: 250px;   
 }
 
-.top_side_image > img, .bottom_side_image > img {
-    width: 100%;
-    height: 100%;
+.front_image_second {
+    background: url(./images/dam-civil-engineering.jpg);
 }
+
+.front_image_second::after {
+    content: "ABCASDASDGFASDGF";
+    font-size: 36px;
+}
+
+.front_image_third {
+    background: url(./images/cinch-project-header.jpg);    
+}
+
+.front_image_fourth {
+    background: url(./images/homdoor-project-header.jpg);
+}
+
+.front_image_fifth {
+    background: url(./images/UFC-Thumbnail.jpg);
+}
+
+.front_image_sixth {
+    background: url(./images/DelicateArch.jpg);
+}
+
+.front_img {
+    width: 33%;
+    height: 28em;
+    margin: 2px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
 
 /*----------------------------------MEDIA QUERIES--------------------------------------*/
 
@@ -214,12 +239,9 @@ header {
     .service_box {
         padding: 100px 50px;
     }
-}
-
-@media screen and (max-width: 600px) {
-    .services_second_block {
-        display: flex;
-        flex-direction: column;
+    .front_img {
+        width: 49%;
+        height: 30em;
     }
 }
 
@@ -239,3 +261,15 @@ header {
         margin: 30px 0;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .services_second_block {
+        display: flex;
+        flex-direction: column;
+    }
+    .front_img {
+        width: 100%;
+        height: 33em;
+    }
+}
+
