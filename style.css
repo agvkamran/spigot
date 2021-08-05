@@ -187,16 +187,30 @@ header {
 .front_image_first {
     background: url(images/all-seasons-adventures.jpg);  
     width: 33%;
-    height: 250px;   
+}
+
+.inner_first_image {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.front_image_first:hover .inner_first_image {
+    background:	rgba(35,29,41,.9);
+}
+.h2_hover {
+   display: none;
+}
+
+.front_image_first:hover .h2_hover {
+    display: block;
 }
 
 .front_image_second {
     background: url(./images/dam-civil-engineering.jpg);
-}
-
-.front_image_second::after {
-    content: "ABCASDASDGFASDGF";
-    font-size: 36px;
 }
 
 .front_image_third {
@@ -224,6 +238,30 @@ header {
     background-position: center center;
     overflow: hidden;
 }
+
+
+/*----------------------------------DR SEAN PAUL----------------------------------------*/
+
+.dr_content_wrapper {
+    display: flex;
+}
+
+.dr_content_left_side {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.dr_content_left_side_inner {
+    display: flex;
+    align-items: center;
+}
+
+.dr_image {
+    width: 50px;
+    height: 50px;
+}
+
 
 
 /*----------------------------------MEDIA QUERIES--------------------------------------*/
