@@ -148,12 +148,15 @@ header {
 
 .service_box {
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #fff;
     flex: 1;
     position: relative;
+    top: 0;
+    left: 0;
 }
 
 .box_name {
@@ -172,6 +175,8 @@ header {
     text-align: center;
     opacity: 0;
     transition: 0.4s all ease;
+    top: 0;
+    left: 0;
 }
 
 .service_box_in_hover > p:first-child {
@@ -320,6 +325,8 @@ header {
 .dr_content_wrapper {
     display: flex;
     background-color: #fff;
+    flex-basis: 100%;
+    flex: 1;
 }
 
 .dr_content_left_side {
@@ -352,6 +359,7 @@ header {
 
 .dr_content_right_side {
     flex: 2.75;
+    display: -ms-flexbox;
 }
 
 .dr_content_right_side_inner {
@@ -384,8 +392,8 @@ header {
 
 .info_block_img {
     overflow: hidden;
-    height: 13em;
-    flex: 1;
+    /* height: 13em; */
+    flex: 1 1 auto;
 }
 
 .info_block_text {
@@ -436,6 +444,8 @@ header {
 }
 
 .address_company_img {
+    background-image: url("./images/Google-Maps-copy.jpg");
+    background-size: cover;
     height: 7em;
     overflow: hidden;
     width: 100%;
